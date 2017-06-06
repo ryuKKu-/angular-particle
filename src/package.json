@@ -1,0 +1,33 @@
+{
+  "name": "angular-particle",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryuKKu-/angular-particle"
+  },
+  "author": {
+    "name": "Luc Raymond",
+    "email": "ryukku.raymond@gmail.com"
+  },
+  "keywords": [
+    "angular2",
+    "angular4",
+    "angular",
+    "particlesjs",
+    "particle",
+    "typescript",
+    "ng2",
+    "particles"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryuKKu-/angular-particle/issues"
+  },
+  "module": "angular-particle.js",
+  "typings": "angular-particle.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
