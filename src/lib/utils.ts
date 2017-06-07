@@ -1,4 +1,4 @@
-﻿import { IParams, ITmpParams, Particle } from '.';
+﻿import { IParams, ITmpParams, Particle } from './index';
 
 export type RGB = {
 	r: number;

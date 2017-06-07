@@ -1,4 +1,4 @@
-﻿import { Particle, ParticleInteraction, IParams, ICanvasParams, IMouseParams, ITmpParams, isInArray, clamp } from '.';
+﻿import { Particle, ParticleInteraction, IParams, ICanvasParams, IMouseParams, ITmpParams, isInArray, clamp } from './index';
 
 export class ParticlesManager {
     private _interaction: ParticleInteraction;

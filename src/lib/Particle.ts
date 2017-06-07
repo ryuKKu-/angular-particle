@@ -1,4 +1,4 @@
-﻿import { IParams, ICanvasParams, ITmpParams, hexToRgb, getColor, createSvgImg }  from '.';
+﻿import { IParams, ICanvasParams, ITmpParams, hexToRgb, getColor, createSvgImg }  from './index';
 
 export class Particle {
     radius: number;

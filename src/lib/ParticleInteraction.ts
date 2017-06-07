@@ -1,4 +1,4 @@
-﻿import { Particle, IParams, ICanvasParams } from '.';
+﻿import { Particle, IParams, ICanvasParams } from './index';
 
 export class ParticleInteraction {
     constructor() { }

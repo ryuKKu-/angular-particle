@@ -1,4 +1,4 @@
-﻿import { ParticlesManager, ICanvasParams, IParams, ITmpParams, hexToRgb } from '.';
+﻿import { ParticlesManager, ICanvasParams, IParams, ITmpParams, hexToRgb } from './index';
 
 export class CanvasManager {
     public particlesManager: ParticlesManager;
