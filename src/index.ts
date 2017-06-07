@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ParticlesComponent } from './particles.component';
 import { ParticlesDirective } from './particles.directive';
 
+export * from './particles.component';
+
 @NgModule({
     imports: [
         CommonModule
@@ -13,8 +15,7 @@ import { ParticlesDirective } from './particles.directive';
         ParticlesDirective
     ],
     exports: [
-        ParticlesComponent,
-        ParticlesDirective
+        ParticlesComponent
     ]
 })
 export class ParticlesModule { }
