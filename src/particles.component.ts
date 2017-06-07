@@ -1,5 +1,5 @@
 ﻿import { Component, Input, OnInit } from '@angular/core';
-import { IParams } from './lib';
+import { IParams } from './lib/index';
 
 @Component({
     selector: 'particles',
