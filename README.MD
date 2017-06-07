@@ -1,6 +1,6 @@
 # angular-particle
 
-Implementation of [particle.js](https://github.com/VincentGarreau/particles.js/) with TypeScript for Angular2/4
+Implementation of [particle.js](https://github.com/VincentGarreau/particles.js/) with TypeScript for Angular2/4. Inspired by [react-particles-js](https://github.com/Wufe/react-particles-js)
 
 ## Installation
 
@@ -30,16 +30,16 @@ import { ParticlesModule } from 'angular-particle';
 export class AppModule { }
 ```
 
-And use the component in your HTML
+And just use the component in your HTML
 
 ```html
 <particles [style]="style" [width]="width" [height]="height" [params]="params"></particles>
 ```
 
-Parameters configuration can be found [here](http://vincentgarreau.com/particles.js/). If you don't provide parameters, default one is used.
+Parameters configuration can be found [here](http://vincentgarreau.com/particles.js/). If you don't provide any parameters, default one are used.
 
 
-##Properties
+## Properties
 
 | Property | Type   | Definition                              |
 | -------- | ------ | --------------------------------------- |
@@ -49,7 +49,7 @@ Parameters configuration can be found [here](http://vincentgarreau.com/particles
 | height   | number | The height of the canvas element (in %) |
 
 
-##Example
+## Example
 
 ```typescript
 
@@ -61,8 +61,8 @@ Parameters configuration can be found [here](http://vincentgarreau.com/particles
 export class AppComponent implements OnInit {
     myStyle: object = {};
 	myParams: object = {};
-	width: number = 500;
-	height: number = 500;
+	width: number = 100;
+	height: number = 100;
 
     ngOnInit() {
         this.myStyle = {
@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
             'bottom': 0,
         };
 
-		this.myParams = {
+	this.myParams = {
             particles: {
                 number: {
                     value: 200,
@@ -87,14 +87,14 @@ export class AppComponent implements OnInit {
                 shape: {
                     type: 'triangle',
                 },
-            }
-		};
+	    }
+	};
     }
 }
 ```
 
 ```html
-<particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
 ```
 
 
