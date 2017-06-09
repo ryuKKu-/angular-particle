@@ -5,6 +5,7 @@ import { ParticlesComponent } from './particles.component';
 import { ParticlesDirective } from './particles.directive';
 
 export * from './particles.component';
+export * from './particles.directive';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ export * from './particles.component';
         ParticlesDirective
     ],
     exports: [
-        ParticlesComponent
+        ParticlesComponent,
+        ParticlesDirective
     ]
 })
 export class ParticlesModule { }
