@@ -18,6 +18,13 @@ export class CanvasManager {
         particles.line_linked.color_rgb_line = hexToRgb(particles.line_linked.color);
     }
 
+    public cancelAnimation(): void {
+        if (!this._tmpParams.drawAnimFrame) {
+            return;
+        }
+        cancelAnimationFrame(this._tmpParams.drawAnimFrame);
+        this._tmpParams.drawAnimFrame = null;
+    }
 
     public draw(): void {
         let { particles } = this._params;

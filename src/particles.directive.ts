@@ -1,10 +1,10 @@
-﻿import { Directive, ElementRef, AfterViewInit, HostListener, Input } from "@angular/core";
+﻿import { Directive, ElementRef, AfterViewInit, HostListener, Input, OnDestroy } from "@angular/core";
 import { CanvasManager, ICanvasParams, IParams, ITmpParams, getDefaultParams, isInArray, deepExtend, loadImg } from './lib/index';
 
 @Directive({
     selector: '[d-particles]'
 })
-export class ParticlesDirective implements AfterViewInit {
+export class ParticlesDirective implements AfterViewInit, OnDestroy  {
     @Input() set params(value: IParams) {
         let defaultParams: IParams = getDefaultParams();
         this._params = deepExtend(defaultParams, value);
@@ -16,6 +16,13 @@ export class ParticlesDirective implements AfterViewInit {
     private _params: IParams;
     private _tmpParams: ITmpParams = {};
     private _canvasManager: CanvasManager;
+
+    ngOnDestroy(): void {
+        if (!this._canvasManager) {
+            return;
+        }
+        this._canvasManager.cancelAnimation();
+    }
 
     ngAfterViewInit(): void {
         this._canvasParams = {
