@@ -14,7 +14,7 @@ export class ParticlesComponent {
     @Input() width: number = 100;
     @Input() height: number = 100;
     @Input() params: IParams;
-    @Input() style: object = {};
+    @Input() style: Object = {};
 
     constructor() { }
 }
