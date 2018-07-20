@@ -33,7 +33,7 @@ export class AppModule { }
 And just use the component in your HTML
 
 ```html
-<particles [style]="style" [width]="width" [height]="height" [params]="params"></particles>
+<particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
 ```
 
 Parameters configuration can be found [here](http://vincentgarreau.com/particles.js/). If you don't provide any parameters, default one are used.
