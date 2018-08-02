@@ -202,7 +202,7 @@ export const getDefaultParams: () => IParams =
 
 
 export function loadImg(params: IParams, tmp: ITmpParams) {
-    let { particles } = this.params;
+    let { particles } = params;
 
     tmp.img_error = undefined;
 
